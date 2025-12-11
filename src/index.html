@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="handlesubmit(event)">
+        <input type="text" id="n1" name="name" placeholder="enter name" onchange="handlechange(event)">
+        <input type="text" id="n2" name="email" placeholder="enter email" onchange="handlechange(event)">
+        <input type="text" id="n3" name="phone" placeholder="enter phonenumber"onchange="handlechange(event)">
+        <input type="text" id="n4" name="password" placeholder="Enter password"onchange="handlechange(event)">
+        <input type="checkbox" id="n5" name="check" placeholder="checkbox"onchange="handlechange(event)">
+        <br>
+        <label for="">Type</label>
+        <select name="role" id="role" onchange="handleselectchange(event)">
+            <option value="" >Select role</option>
+            <option value="user">user</option>
+            <option value="admin">admin</option>
+        </select>
+        <button type="submit">Check</button>
+        <!-- <div>
+            <div>
+                <h3>user list</h3>
+                <label for="">Role:
+            <select name="role" id="role" onchange="handleRolechange(event)"> check
+            <option value="" >All Role</option>
+            <option value="user">user</option>
+            <option value="admin">admin</option>
+        </select>
+        </label> 
+            </div>
+        </div> -->
+        
+    </form>
+    <h3>User List</h3>
+    <ul id="userList"></ul>
+    <script type="module" src="../dist/index.js"></script>
+</body>
+</html>
